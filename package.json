@@ -1,0 +1,49 @@
+{
+  "name": "glitch-starter-project",
+  "version": "0.0.1",
+  "description": "Personal starter project",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.15.3",
+    "request": "^2.81.0",
+    "body-parser": "^1.17.2",
+    "express-handlebars": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-less": "^3.3.2",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-jshint": "^2.0.4",
+    "gulp-uglify": "^3.0.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-clean": "^0.3.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-notify": "^3.0.0",
+    "gulp-sourcemaps": "^2.6.0",
+    "browser-sync": "^2.18.12",
+    "jshint": "^2.9.5",
+    "gulp-streamify": "^1.0.2",
+    "browserify": "^14.4.0",
+    "babelify": "^7.3.0",
+    "vinyl-source-stream": "^1.1.0",
+    "jshint-stylish": "^2.2.1",
+    "babel-preset-es2015": "^6.24.1",
+    "gulp-util": "^3.0.8",
+    "cheerio": "^0.22.0",
+    "gulp-plumber": "^1.1.0"
+  },
+  "engines": {
+    "node": "8.1.x"
+  },
+  "repository": {
+    "url": "https://glitch.com/edit/#!/glitch-starter-project"
+  },
+  "license": "MIT",
+  "keywords": [
+    "node",
+    "glitch",
+    "express"
+  ]
+}
