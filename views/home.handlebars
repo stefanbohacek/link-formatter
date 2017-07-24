@@ -1,0 +1,65 @@
+<div class="row shifted">
+  <div class="col-md-12">
+    <h1><span>{{title}}</span></h1>
+    <p>{{description}} <a href="https://glitch.com/edit/#!/{{ project_name }}?path=README.md" target="_blank">Learn more</a></p>
+  </div>
+</div>
+<form id="main-form" action="/" method="post">
+  <div class="row shifted">
+    <div class="col-md-12">
+      <div class="form-group">
+        <label for="urls"><h2>Your URLs</h2></label>
+        <textarea class="form-control" id="urls" name="urls" rows="6" placeholder="Your URLs, each on a separate line..."></textarea>
+      </div>
+    </div>
+  </div>
+  <div class="shifted">
+    <div class="row">
+      <div class="col-md-12">
+        <h2>Code</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-6">
+        <label class="form-check-label">
+          <input class="form-check-input" type="radio" name="format" id="format_html" value="html" checked>
+          HTML
+        </label>
+      </div>
+      <div class="col-lg-6">
+        <label class="form-check-label">
+          <input class="form-check-input" type="radio" name="format" id="format_markdown" value="markdown">
+          Markdown
+        </label> 
+      </div>
+    </div>
+  </div>
+  <div class="shifted">
+    <div class="row">
+      <div class="col-md-12">
+        <h2>Options</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-6">
+        <label class="form-check-label">
+          <input class="form-check-input" type="checkbox" name="wrap-list" id="cb-wrap-list" checked value="yes">
+          Wrap links inside a bullet list.
+        </label>
+      </div>
+      <div class="col-lg-6">
+        <label class="form-check-label">
+          <input class="form-check-input" type="checkbox" name="show-domain" id="cb-show-domain" checked value="yes">
+          Add website domain after link.
+        </label>
+      </div>
+    </div>
+  </div>
+  <div class="shifted">
+    <div class="row">
+      <div class="col-md-12">
+        <button id="submit-button" type="submit" action="/" class="btn btn-primary">Submit</button>
+      </div>
+    </div>
+  </div>
+</form>
