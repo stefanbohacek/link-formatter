@@ -11,13 +11,18 @@ var express = require('express'),
     helpers = require(__dirname + '/helpers.js');
 
 function cleanURL(url){
-  /* Remove UTM tracking */
+  /* Remove UTM tracking, the easy way. */
   var utmPos = url.indexOf('utm_');
   if (utmPos > -1){
     url = url.substring(0, utmPos - 1);
   }
-  /* Remove extra line breaks */
+  /* Remove extra line breaks. */
   url = url.replace(/(\r\n|\n|\r)/gm, '');
+  
+  /* Some people use URLs without the protocol? Oh boy. */
+  if (url.indexOf('http://') === -1 && url.indexOf('https://') === -1){
+    url = 'http://' + url;
+  }
   
   return url;
 }
@@ -103,7 +108,9 @@ options = {
     title: process.env.TITLE,
     description: process.env.DESCRIPTION,
     project_name: process.env.PROJECT_DOMAIN,
-    code: code
+    code: code,
+    sc_project: process.env.SC_PROJECT,
+    sc_security: process.env.SC_SECURITY
   });
 }
 
@@ -119,7 +126,9 @@ app.get('/', function (req, res) {
   res.render('home', {
     title: process.env.TITLE,
     description: process.env.DESCRIPTION,
-    project_name: process.env.PROJECT_DOMAIN
+    project_name: process.env.PROJECT_DOMAIN,
+    sc_project: process.env.SC_PROJECT,
+    sc_security: process.env.SC_SECURITY    
   });
 });
 
@@ -128,6 +137,7 @@ app.post('/', function (req, res) {
   
   urls = urls.map(cleanURL);
 
+  console.log(urls);
   var actions = urls.map(getPageMetadataFn);
   var results = Promise.all(actions);  
 
