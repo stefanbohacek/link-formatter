@@ -137,7 +137,6 @@ app.post('/', function (req, res) {
   
   urls = urls.map(cleanURL);
 
-  console.log(urls);
   var actions = urls.map(getPageMetadataFn);
   var results = Promise.all(actions);  
 
