@@ -2,7 +2,7 @@
 
 ![Link formatter](https://cdn.glitch.com/37a654b9-a52c-4f9c-9fab-82824e856b33%2Flink-formatter.gif?1500791349107)
 
-A simple tool that turns URLs into properly formatted HTML or Markdown.
+A simple tool that turns URLs into HTML or Markdown links with proper titles. 
 
 Put in some URLs:
 
