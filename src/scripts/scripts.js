@@ -21,14 +21,14 @@ ready(function(){
     el_cb_wrap_list.checked = true;
   }
   else{
-    el_cb_wrap_list.checked = false;    
+    el_cb_wrap_list.checked = false;
   }
 
   if (Cookies.get('show-domain') === 'yes'){
     el_cb_show_domain.checked = true;
   }
   else{
-    el_cb_show_domain.checked = false;    
+    el_cb_show_domain.checked = false;
   }
   
   if (Cookies.get('urls')){
@@ -42,7 +42,7 @@ ready(function(){
     if (el_urls_textarea.value.length > 0){
       ev.target.innerHTML = 'Generating code...';
       ev.target.disabled = true;
-      document.getElementById("main-form").submit();    
+      document.getElementById("main-form").submit();
     }
     else{
       alert('No URLs to process.');
@@ -52,33 +52,33 @@ ready(function(){
   
   
   el_textarea_urls.addEventListener('input', function() {
-    Cookies.set('urls', el_textarea_urls.value);
+    Cookies.set('urls', el_textarea_urls.value, { expires: 7 });
   }, false);
 
   
   document.getElementById('format_html').addEventListener('click', function(ev){
-    Cookies.set('format', 'html');
+    Cookies.set('format', 'html', { expires: 7 });
   });
   
   document.getElementById('format_markdown').addEventListener('click', function(ev){
-    Cookies.set('format', 'markdown');
+    Cookies.set('format', 'markdown', { expires: 7 });
   });  
   
   el_cb_wrap_list.addEventListener('click', function(ev){
     if (el_cb_wrap_list.checked === true){
-      Cookies.set('wrap-list', 'yes');    
+      Cookies.set('wrap-list', 'yes', { expires: 7 });
     }
     else{
-      Cookies.remove('wrap-list');    
+      Cookies.remove('wrap-list');
     }
   });
   
   el_cb_show_domain.addEventListener('click', function(ev){
     if (el_cb_show_domain.checked === true){
-      Cookies.set('show-domain', 'yes');    
+      Cookies.set('show-domain', 'yes', { expires: 7 });
     }
     else{
-      Cookies.remove('show-domain');    
+      Cookies.remove('show-domain');
     }
     console.log(Cookies.get('show-domain'));
   });

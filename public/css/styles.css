@@ -34,9 +34,12 @@ h1 {
 }
 h1 span {
   font-size: 2em;
+  line-height: 2em;
   color: #fff;
   background-color: #38313a;
   padding: 0.2em 0.5em;
+  -webkit-box-decoration-break: clone;
+          box-decoration-break: clone;
 }
 a {
   /*  color: @link-color;*/

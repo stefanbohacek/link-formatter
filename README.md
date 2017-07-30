@@ -26,6 +26,10 @@ Any questions? Feel free to send an email to [stefan@fourtonfish.com](mailto:ste
 
 I hope you'll find this tool useful!
 
+# To-do
+
+- Add option to add `target="_blank"` and `rel="noopener"` when HTML is selected as code format ([source](https://twitter.com/qubyte/status/889613996449554432))
+
 # For developers
 
 This project uses my [personal Glitch starter project](https://glitch.com/edit/#!/glitch-starter-project). I like using [gulp](http://gulpjs.com/), so that's what you are stuck with, sorry!
