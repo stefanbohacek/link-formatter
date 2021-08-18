@@ -4,8 +4,6 @@ import ready from "./ready.js";
 import {unshiftShiftedElements} from "./helpers.js";
 
 ready(function(){
-  unshiftShiftedElements(document.getElementsByClassName('shifted'));
-  
   var el_urls_textarea = document.getElementById('urls'),
       el_cb_wrap_list = document.getElementById('cb-wrap-list'),
       el_cb_show_domain = document.getElementById('cb-show-domain'),

@@ -16,7 +16,7 @@ function unshiftShiftedElements(shiftedEls){
           el.classList.remove('shifted');
           el.classList.add('unshifted');
         },
-        55*index*index);
+        10*index*index);
     });
   }  
 }
