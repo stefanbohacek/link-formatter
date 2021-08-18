@@ -13,9 +13,9 @@
   <meta property="twitter:image:src" content="https://cdn.glitch.com/37a654b9-a52c-4f9c-9fab-82824e856b33%2Flink-formatter-thumbnail.PNG?1500791645553"/>
   <meta name="twitter:title" content="{{title}}.">
   <meta name="twitter:description" content="{{description}}">
-  <!--[if lt IE 9]>
-  <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
-  <![endif]-->  
+<!--[if lt IE 9]>
+<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->  
   <link rel="stylesheet" href="libs/bootstrap/bootstrap.min.css">
   <link rel="stylesheet" href="css/styles.min.css">
   <link rel="apple-touch-icon" sizes="57x57" href="https://cdn.glitch.com/37a654b9-a52c-4f9c-9fab-82824e856b33%2Fapple-icon-57x57.png">
@@ -34,29 +34,64 @@
   <meta name="msapplication-TileColor" content="#ffffff">
   <meta name="msapplication-TileImage" content="https://cdn.glitch.com/37a654b9-a52c-4f9c-9fab-82824e856b33%2Fms-icon-144x144.png">
   <meta name="theme-color" content="#ffffff">
-<link href="https://fonts.googleapis.com/css?family=Open Sans|Anton" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Open Sans|Anton" rel="stylesheet" type="text/css">
 </head>
 <body>
-  <!--[if lt IE 7]>
-    <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="//browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-  <![endif]-->
+<!--[if lt IE 7]>
+<p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="//browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+<![endif]-->
   <div class="container-fluid">
     <section id="content">
       <div id="content-inner">   
         {{{body}}}
       </div>
-      <footer class="shifted">
+      <footer>
         <p><a href="https://glitch.com/edit/#!/{{ project_name }}">View source on Glitch.</a> Created by <a href="https://twitter.com/fourtonfish">@fourtonfish</a>.</p>
+        <div class="container pb-5 mt-5">
+          <div class="row align-items-center">
+            <div class="col-sm-6 col-md-4 mx-auto text-center">
+              <p>
+                <a href="https://fightfascism.glitch.me/">
+                  <img class="lazy-loaded" title="Fight Fascism sticker by Angus Johnston" alt="Fight fascism" src="https://cdn.glitch.com/4e796d0c-e4ff-46fc-a546-de1ccc1e8663%2Ffight-fascism.png">
+                </a>
+                <noscript>
+                  <a href="https://fightfascism.glitch.me/">
+                    <img class="lazy-load" title="Fight Fascism sticker by Angus Johnston" alt="Fight fascism" src="https://cdn.glitch.com/4e796d0c-e4ff-46fc-a546-de1ccc1e8663%2Ffight-fascism.png">
+                  </a>
+                </noscript>
+              </p>
+            </div>
+            <div class="col-sm-6 col-md-4 mx-auto text-center">
+              <p>
+                <a href="https://blacklivesmatter.com/">
+                  <img class="lazy-loaded" alt="Black Lives Matter" title="Black Lives Matter logo" src="https://cdn.glitch.com/4e796d0c-e4ff-46fc-a546-de1ccc1e8663%2Fblm.png">
+                </a>
+                <noscript>
+                  <a href="https://blacklivesmatter.com/">
+                    <img class="lazy-load" alt="Black Lives Matter" title="Black Lives Matter logo" src="https://cdn.glitch.com/4e796d0c-e4ff-46fc-a546-de1ccc1e8663%2Fblm.png">
+                  </a>
+                </noscript>
+              </p>              
+            </div>      
+            <div class="col-sm-6 col-md-4 mx-auto text-center">      
+              <p>
+                <a href="https://indieweb.org/">
+                  <img class="lazy-loaded" alt="IndieWeb" title="Support #indieweb!" src="https://cdn.glitch.com/4e796d0c-e4ff-46fc-a546-de1ccc1e8663%2Findiewebcamp.png">
+                </a>
+                <noscript>
+                  <a href="https://indieweb.org/">
+                    <img class="lazy-load" alt="IndieWeb" title="Support #indieweb!" src="https://cdn.glitch.com/4e796d0c-e4ff-46fc-a546-de1ccc1e8663%2Findiewebcamp.png">
+                  </a>
+                </noscript>
+              </p>
+            </div>
+          </div>
+        </div>
       </footer>
     </section>
   </div>
-  <script>
-    var node = document.createElement('style');
-    node.innerHTML = '.shifted{-webkit-transition:all 1s;transition:all 1s;-webkit-transform:translate(0,10px);-ms-transform:translate(0,10px);transform:translate(0,10px);opacity:0}';
-    document.body.appendChild(node);
-  </script>
   <script defer src="libs/js.cookie/js.cookie.min.js"></script>
   <script defer src="js/scripts.min.js"></script>
   {{> statcounter sc_project=sc_project sc_security=sc_security}}
-  </body>
+</body>
 </html>
