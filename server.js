@@ -57,8 +57,7 @@ app.get( '/', function ( req, res ) {
     description: process.env.DESCRIPTION,
     project_name: process.env.PROJECT_DOMAIN,
     styles: styles,
-    sc_project: process.env.SC_PROJECT,
-    sc_security: process.env.SC_SECURITY
+    head_scripts: process.env.HEAD_SCRIPTS
   } );
 } );
 
