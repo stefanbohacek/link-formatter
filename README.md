@@ -22,7 +22,7 @@ And get HTML or Markdown code:
 [Little Planet Procedural](http://alanluo.com/procgen/midterm.html) (alanluo.com)
 ```
 
-Any questions? Feel free to send an email to [stefan@stefanbohacek.com](mailto:stefan@stefanbohacek.com) or a DM/tweet to [@stefanbohacek](https://twitter.com/stefanbohacek).
+Any questions? Feel free to send an email to [stefan@stefanbohacek.com](mailto:stefan@stefanbohacek.com) or a DM to [@stefanbohacek](https://stefanbohacek.online/@stefan).
 
 I hope you'll find this tool useful!
 
