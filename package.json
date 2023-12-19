@@ -10,7 +10,7 @@
     "express": "^4.15.3",
     "request": "^2.81.0",
     "body-parser": "^1.17.2",
-    "express-handlebars": "^3.0.0",
+    "express-handlebars": "^5.3.1",
     "gulp": "^3.9.1",
     "gulp-less": "^3.3.2",
     "gulp-autoprefixer": "^4.0.0",
