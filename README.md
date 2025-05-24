@@ -1,7 +1,5 @@
 # Link formatter
 
-![Link formatter](https://cdn.glitch.com/37a654b9-a52c-4f9c-9fab-82824e856b33%2Flink-formatter.gif?1500791349107)
-
 A simple tool that turns URLs into HTML or Markdown links with proper titles. 
 
 Put in some URLs:
@@ -22,7 +20,7 @@ And get HTML or Markdown code:
 [Little Planet Procedural](http://alanluo.com/procgen/midterm.html) (alanluo.com)
 ```
 
-Any questions? Feel free to send an email to [stefan@stefanbohacek.com](mailto:stefan@stefanbohacek.com) or a DM to [@stefanbohacek](https://stefanbohacek.online/@stefan).
+Any questions? Here's how to [get in touch](https://stefanbohacek.com/contact/).
 
 I hope you'll find this tool useful!
 
@@ -32,19 +30,4 @@ I hope you'll find this tool useful!
 
 # For developers
 
-This project uses my [personal Glitch starter project](https://glitch.com/edit/#!/glitch-starter-project). I like using [gulp](http://gulpjs.com/), so that's what you are stuck with, sorry!
-
-If you want to update the CSS and JS files, here's how to do it.
-
-Open the console, and run `gulp`. (See screenshots below.) You can now edit all CSS and JS files inside the `src` folder and they will be updated without restarting your app.
-
-![Step 1: Navigate to Advanced options](https://cdn.glitch.com/ade603f9-216b-48b0-a9d1-90c922a7237a%2Fhowto-01.PNG?1500481479450)
-
-![Step 2: Open the console](https://cdn.glitch.com/ade603f9-216b-48b0-a9d1-90c922a7237a%2Fhowto-02.PNG?1500481479627)
-
-![Step 3: Run gulp](https://cdn.glitch.com/ade603f9-216b-48b0-a9d1-90c922a7237a%2Fhowto-03.PNG?1500481612469)
-
-For this particular project, I added [Bootstrap 4 Alpha](https://v4-alpha.getbootstrap.com/layout/grid/#grid-options). (Normally I just use the grid system.)
-
-This project is hosted on [Glitch](https://glitch.com).
-
+You can now edit all CSS and JS files inside the `src` folder and use [gulp](http://gulpjs.com/) to compile them.
